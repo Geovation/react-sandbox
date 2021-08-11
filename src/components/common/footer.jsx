@@ -3,9 +3,9 @@ import { Box, Container, Grid, Link } from "@material-ui/core";
 function Footer() {
   return (
     <footer>
-      <Box bgcolor="#37474f" color="#ffffff">
+      <Box bgcolor="#37474f" color="#ffffff" pt={5}>
         <Container maxWidth="lg">
-          <Grid container spacing={10}>
+          <Grid container spacing={4}>
             <Grid item xs={12} sm={4}>
               <Box borderBottom={1}>Geovation</Box>
               <Box pt={2}>
