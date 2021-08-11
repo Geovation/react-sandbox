@@ -4,10 +4,10 @@ import { Grid, Typography, Card, Box } from "@material-ui/core";
 function HomePage() {
   return (
     <Fragment>
-      <Card style={{ backgroundColor: "#ffa726" }}>
+      <Card style={{ backgroundColor: "#ffa726", margin: "20px" }}>
         <Grid item p={1}>
           <Box p={2}>
-            <Typography variant="h1">React Sandbox</Typography>
+            <Typography variant="h2">React Sandbox</Typography>
           </Box>
         </Grid>
 
