@@ -4,6 +4,14 @@ import { Grid, Typography, Card, Box } from "@material-ui/core";
 function HomePage() {
   return (
     <Fragment>
+      <Grid
+              container
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              style={{ minHeight: "100vh" }}
+              
+            >
       <Card style={{ backgroundColor: "#ffa726", margin: "20px" }}>
         <Grid item p={1}>
           <Box p={2}>
@@ -27,6 +35,7 @@ function HomePage() {
           </Box>
         </Grid>
       </Card>
+      </Grid>
     </Fragment>
   );
 }
