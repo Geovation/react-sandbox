@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
 import { Grid, Paper } from "@material-ui/core";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import { useForm, Controller } from "react-hook-form";
-import TextField from '@material-ui/core/TextField';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
-import SendIcon from '@material-ui/icons/Send';
-import Button from '@material-ui/core/Button';
-import Select from 'react-select'
-import makeAnimated from 'react-select/animated';
-import axios from 'axios';
+import TextField from "@material-ui/core/TextField";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormControl from "@material-ui/core/FormControl";
+import FormLabel from "@material-ui/core/FormLabel";
+import SendIcon from "@material-ui/icons/Send";
+import Button from "@material-ui/core/Button";
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
+import axios from "axios";
 
 const animatedComponents = makeAnimated();
 
@@ -34,7 +34,7 @@ function FormPage() {
     const classes = useStyles();
     const { control, handleSubmit } = useForm();
 
-    const [radioGroupValue, setRadioGroupValue] = React.useState('Home');
+    const [radioGroupValue, setRadioGroupValue] = React.useState("Home");
 
     const radioHandleChange = (event) => {
         setRadioGroupValue(event.target.value);
@@ -43,7 +43,7 @@ function FormPage() {
     const onSubmit = (data) => {
         alert(JSON.stringify(data));
 
-        axios.post(`https://usebasin.com/f/b349af0a775b`, { data })
+        axios.post(https:"//usebasin.com/f/b349af0a775b", { data })
             .then(res => {
                 console.log(res);
             })
