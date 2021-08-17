@@ -43,7 +43,7 @@ function FormPage() {
     const onSubmit = (data) => {
         alert(JSON.stringify(data));
 
-        axios.post(https:"//usebasin.com/f/b349af0a775b", { data })
+        axios.post("https://usebasin.com/f/b349af0a775b", { data })
             .then(res => {
                 console.log(res);
             })
