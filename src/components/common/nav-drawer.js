@@ -14,9 +14,11 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import { Route } from "react-router-dom";
+
 import MapIcon from "@material-ui/icons/Map";
 import HomeIcon from "@material-ui/icons/Home";
-import { Route } from "react-router-dom";
+import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 
 const drawerWidth = 240;
 
@@ -172,6 +174,20 @@ function NavDrawer(props) {
                   <MapIcon />
                 </ListItemIcon>
                 <ListItemText primary="Google Maps" />
+              </ListItem>
+
+              <ListItem
+                button
+                key="Form"
+                onClick={() => {
+                  history.push("/form-page");
+                  setTitle("Form");
+                }}
+              >
+                <ListItemIcon>
+                  <ContactSupportIcon />
+                </ListItemIcon>
+                <ListItemText primary="Form" />
               </ListItem>
             </List>
           )}
