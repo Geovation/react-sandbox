@@ -20,4 +20,4 @@ module.exports = {
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
   },
-}
+};
