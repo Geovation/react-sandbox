@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(2),
     padding: theme.spacing(4),
-    width: "60vw",
+    width: "60vw"
   },
   custom_grid_item: {
-    padding: theme.spacing(2),
-  },
+    padding: theme.spacing(2)
+  }
 }));
 
 function FormPage() {
@@ -110,7 +110,7 @@ function FormPage() {
                     label="Date of Birth"
                     type="date"
                     InputLabelProps={{
-                      shrink: true,
+                      shrink: true
                     }}
                     fullWidth
                     {...field}
@@ -161,7 +161,7 @@ function FormPage() {
                         { value: "macOS", label: "MacOS" },
                         { value: "windows", label: "Windows" },
                         { value: "android", label: "Android" },
-                        { value: "ios", label: "iOS" },
+                        { value: "ios", label: "iOS" }
                       ]}
                     />
                   )}
