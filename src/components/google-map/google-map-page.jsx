@@ -1,7 +1,6 @@
-import GoogleMapReact from 'google-map-react';
+import GoogleMapReact from "google-map-react";
 
-function GoogleMapsPage()
-{
+function GoogleMapsPage() {
   const defaultProps = {
     center: {
       lat: 51.5074,
@@ -11,13 +10,14 @@ function GoogleMapsPage()
   };
 
   return (
-    <div style={{ height: '100vh', width: "100%" }}>
+    <div style={{ height: "100vh", width: "100%" }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyDf6rgN-gGoCPLP6G_NHqVDAoLZ7UN2Yec" }}
+        bootstrapURLKeys={{
+          key: "AIzaSyDf6rgN-gGoCPLP6G_NHqVDAoLZ7UN2Yec"
+        }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
-      >
-      </GoogleMapReact>
+      ></GoogleMapReact>
     </div>
   );
 }
