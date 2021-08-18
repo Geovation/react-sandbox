@@ -20,7 +20,6 @@ module.exports = {
     "react/prop-types": 0,
     "linebreak-style": ["error", "unix"],
     "arrow-body-style": "off",
-    "prefer-arrow-callback": "off",
-    "comma-dangle": ["error", "never"]
+    "prefer-arrow-callback": "off"
   }
 };
