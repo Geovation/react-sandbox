@@ -16,7 +16,6 @@ function App() {
       <NavDrawer
         pageContent={
           <Fragment>
-
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/google-map-page" component={GoogleMapsPage} />
