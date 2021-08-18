@@ -16,7 +16,6 @@ module.exports = {
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": 0,
-    "comma-dangle": ["error", "never"],
     "prettier/prettier": "error",
     "react/prop-types": 0,
     "linebreak-style": ["error", "unix"],
