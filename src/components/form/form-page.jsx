@@ -96,6 +96,7 @@ function FormPage() {
             item
             container
             md={12}
+            spacing={3}
             justifyContent="space-between"
             className={classes.custom_grid_item}
           >
@@ -139,6 +140,7 @@ function FormPage() {
             item
             container
             md={12}
+            spacing={3}
             justifyContent="space-between"
             className={classes.custom_grid_item}
           >
