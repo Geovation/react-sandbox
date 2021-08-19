@@ -19,6 +19,7 @@ import { Route } from "react-router-dom";
 import MapIcon from "@material-ui/icons/Map";
 import HomeIcon from "@material-ui/icons/Home";
 import ContactSupportIcon from "@material-ui/icons/ContactSupport";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
 
 const drawerWidth = 240;
 
@@ -188,6 +189,20 @@ function NavDrawer(props) {
                   <ContactSupportIcon />
                 </ListItemIcon>
                 <ListItemText primary="Form" />
+              </ListItem>
+
+              <ListItem
+                button
+                key="Auth"
+                onClick={() => {
+                  history.push("/auth");
+                  setTitle("Auth");
+                }}
+              >
+                <ListItemIcon>
+                  <AccountBoxIcon />
+                </ListItemIcon>
+                <ListItemText primary="Auth" />
               </ListItem>
             </List>
           )}
