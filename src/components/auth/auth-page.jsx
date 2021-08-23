@@ -9,7 +9,6 @@ const signOut = (auth) => auth.signOut().then(() => console.log("signed out"));
 const UserDetails = () => {
   const auth = useAuth();
   const { data: user } = useUser();
-  console.log(user);
 
   return (
     <>
@@ -62,9 +61,9 @@ function AuthPage() {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      style={{ minHeight: "100vh", minWidth: "50vw" }}
+      style={{ minHeight: "100vh" }}
     >
-      <Grid item container xs={7} sm={7} md={6} xl={2}>
+      <Grid item>
         <SuspenseWithPerf
           traceId={"firebase-user-wait"}
           fallback={<CircularProgress />}
