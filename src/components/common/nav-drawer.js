@@ -204,6 +204,20 @@ function NavDrawer(props) {
                 </ListItemIcon>
                 <ListItemText primary="Auth" />
               </ListItem>
+
+              <ListItem
+                button
+                key="Mapbox"
+                onClick={() => {
+                  history.push("/mapbox-page");
+                  setTitle("Mapbox");
+                }}
+              >
+                <ListItemIcon>
+                  <MapIcon />
+                </ListItemIcon>
+                <ListItemText primary="Mapbox" />
+              </ListItem>
             </List>
           )}
         />

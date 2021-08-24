@@ -10,6 +10,7 @@ import HomePage from "./components/home-page.jsx";
 import FormPage from "./components/form/form-page.jsx";
 import GoogleMapsPage from "./components/google-map/google-map-page.jsx";
 import AuthPage from "./components/auth/auth-page.jsx";
+import MapboxPage from "./components/mapbox/mapbox-page.jsx";
 
 function App() {
   const firebaseApp = useFirebaseApp();
@@ -29,6 +30,7 @@ function App() {
               <Route path="/google-map-page" component={GoogleMapsPage} />
               <Route path="/form-page" component={FormPage} />
               <Route path="/auth" component={AuthPage} />
+              <Route path="/mapbox-page" component={MapboxPage} />
             </Switch>
 
             <Footer />
