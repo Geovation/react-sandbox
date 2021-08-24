@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import NavDrawer from "./components/common/nav-drawer";
@@ -12,13 +12,12 @@ import FormPage from "./components/form/form-page.jsx";
 import GoogleMapsPage from "./components/google-map/google-map-page.jsx";
 import AuthPage from "./components/auth/auth-page.jsx";
 
-const preloadSDKs = (firebaseApp) => {
-  return Promise.all([preloadAuth({ firebaseApp })]);
-};
-
 function App() {
   const firebaseApp = useFirebaseApp();
-  preloadSDKs(firebaseApp);
+
+  useEffect(async () => {
+    await preloadAuth({ firebaseApp });
+  }, []);
 
   return (
     <Router>
