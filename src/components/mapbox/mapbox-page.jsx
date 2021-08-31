@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { Fragment, useRef, useEffect, useState } from "react";
 import mapboxgl from "!mapbox-gl";
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYWJkdWxvbWFyZmFydXEiLCJhIjoiY2tsajgxdXV2MWt2YzJ3b2lmeTdvcmNrcyJ9.sH-v970wUMTYCN6F2ymbng";
@@ -14,7 +14,7 @@ export default function MapboxPage() {
   const [lng, setLng] = useState(0.1278);
   const [lat, setLat] = useState(51.5074);
   const [zoom, setZoom] = useState(9);
-  const [mapStyle, setmapStyle] = useState(
+  const [mapStyle, setMapStyle] = useState(
     "mapbox://styles/mapbox/streets-v11"
   );
 
@@ -38,18 +38,12 @@ export default function MapboxPage() {
   });
 
   const handleChange = (event) => {
-    setmapStyle(event.target.value);
-    map.current.remove();
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: event.target.value,
-      center: [lng, lat],
-      zoom: zoom
-    });
+    setMapStyle(event.target.value);
+    map.current.setStyle(event.target.value);
   };
 
   return (
-    <>
+    <Fragment>
       <Box maxWidth="md" p={1}>
         <FormControl component="fieldset">
           <RadioGroup
@@ -83,6 +77,6 @@ export default function MapboxPage() {
         </FormControl>
       </Box>
       <div ref={mapContainer} style={{ height: "85vh", width: "100%" }} />
-    </>
+    </Fragment>
   );
 }
