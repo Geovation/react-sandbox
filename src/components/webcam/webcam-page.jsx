@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useCallback, useState } from "react";
+import React, { useRef, useCallback, useState } from "react";
 import Webcam from "react-webcam";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
@@ -14,42 +14,31 @@ export default function WebcamPage() {
   }, [webcamRef, setImgSrc]);
 
   return (
-    <Fragment>
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-        style={{ minHeight: "100vh" }}
-      >
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      style={{ minHeight: "100vh", padding: "10px" }}
+    >
+      <Grid item>
+        <IconButton
+          color="primary"
+          aria-label="take picture"
+          component="span"
+          onClick={capture}
         >
-          <Grid item>
-            <IconButton
-              color="primary"
-              aria-label="take picture"
-              component="span"
-              onClick={capture}
-            >
-              <PhotoCameraIcon />
-            </IconButton>
-          </Grid>
-        </Grid>
-
-        <Grid item>
-          <Webcam audio={false} ref={webcamRef} />
-        </Grid>
-
-        {imgSrc && (
-          <Grid item>
-            <img src={imgSrc} />
-          </Grid>
-        )}
+          <PhotoCameraIcon />
+        </IconButton>
       </Grid>
-    </Fragment>
+      <Grid item>
+        <Webcam audio={false} width={"100%"} ref={webcamRef} />
+      </Grid>
+      {imgSrc && (
+        <Grid item>
+          <img src={imgSrc} />
+        </Grid>
+      )}
+    </Grid>
   );
 }
