@@ -20,6 +20,7 @@ import MapIcon from "@material-ui/icons/Map";
 import HomeIcon from "@material-ui/icons/Home";
 import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 
 const drawerWidth = 240;
 
@@ -216,7 +217,20 @@ function NavDrawer(props) {
                 <ListItemIcon>
                   <MapIcon />
                 </ListItemIcon>
-                <ListItemText primary="Mapbox" />
+                <ListItemText primary="Webcam" />
+              </ListItem>
+              <ListItem
+                button
+                key="Webcam"
+                onClick={() => {
+                  history.push("/webcam-page");
+                  setTitle("Webcam");
+                }}
+              >
+                <ListItemIcon>
+                  <PhotoCameraIcon />
+                </ListItemIcon>
+                <ListItemText primary="Webcam" />
               </ListItem>
             </List>
           )}
