@@ -8,7 +8,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Box from "@material-ui/core/Box";
 
-export default function MapboxPage() {
+function MapboxPage() {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(0.1278);
@@ -80,3 +80,5 @@ export default function MapboxPage() {
     </Fragment>
   );
 }
+
+export default MapboxPage;
