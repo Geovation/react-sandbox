@@ -19,7 +19,7 @@ function GeolocationPage() {
           setLng(position.coords.longitude);
         },
         () => {
-          setStatus("Unable to retrieve your location");
+          setStatus("Unable to retrieve your location.");
         }
       );
     }
