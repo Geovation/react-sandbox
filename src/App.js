@@ -12,6 +12,7 @@ import GoogleMapsPage from "./components/google-map/google-map-page.jsx";
 import AuthPage from "./components/auth/auth-page.jsx";
 import MapboxPage from "./components/mapbox/mapbox-page.jsx";
 import WebcamPage from "./components/webcam/webcam-page.jsx";
+import GeolocationPage from "./components/geolocation/geolocation-page.jsx";
 
 function App() {
   const firebaseApp = useFirebaseApp();
@@ -33,6 +34,7 @@ function App() {
               <Route path="/auth" component={AuthPage} />
               <Route path="/mapbox-page" component={MapboxPage} />
               <Route path="/webcam-page" component={WebcamPage} />
+              <Route path="/geolocation-page" component={GeolocationPage} />
             </Switch>
 
             <Footer />

@@ -21,6 +21,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
+import GpsFixedIcon from "@material-ui/icons/GpsFixed";
 
 const drawerWidth = 240;
 
@@ -231,6 +232,20 @@ function NavDrawer(props) {
                   <PhotoCameraIcon />
                 </ListItemIcon>
                 <ListItemText primary="Webcam" />
+              </ListItem>
+
+              <ListItem
+                button
+                key="Geolocatoin"
+                onClick={() => {
+                  history.push("/geolocation-page");
+                  setTitle("Geolocation");
+                }}
+              >
+                <ListItemIcon>
+                  <GpsFixedIcon />
+                </ListItemIcon>
+                <ListItemText primary="Geolocation" />
               </ListItem>
             </List>
           )}
