@@ -22,6 +22,7 @@ import ContactSupportIcon from "@material-ui/icons/ContactSupport";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import GpsFixedIcon from "@material-ui/icons/GpsFixed";
+import ListIcon from "@material-ui/icons/List";
 
 const drawerWidth = 240;
 
@@ -236,7 +237,7 @@ function NavDrawer(props) {
 
               <ListItem
                 button
-                key="Geolocatoin"
+                key="Geolocation"
                 onClick={() => {
                   history.push("/geolocation-page");
                   setTitle("Geolocation");
@@ -246,6 +247,20 @@ function NavDrawer(props) {
                   <GpsFixedIcon />
                 </ListItemIcon>
                 <ListItemText primary="Geolocation" />
+              </ListItem>
+
+              <ListItem
+                button
+                key="Large Lists"
+                onClick={() => {
+                  history.push("/large-lists-page");
+                  setTitle("Large Lists");
+                }}
+              >
+                <ListItemIcon>
+                  <ListIcon />
+                </ListItemIcon>
+                <ListItemText primary="Large Lists" />
               </ListItem>
             </List>
           )}

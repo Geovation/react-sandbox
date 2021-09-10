@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 
-export default function WebcamPage() {
+function WebcamPage() {
   const webcamRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
 
@@ -42,3 +42,5 @@ export default function WebcamPage() {
     </Grid>
   );
 }
+
+export default WebcamPage;
