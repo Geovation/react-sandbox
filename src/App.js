@@ -13,6 +13,7 @@ import AuthPage from "./components/auth/auth-page.jsx";
 import MapboxPage from "./components/mapbox/mapbox-page.jsx";
 import WebcamPage from "./components/webcam/webcam-page.jsx";
 import GeolocationPage from "./components/geolocation/geolocation-page.jsx";
+import LargeListsPage from "./components/large-lists/large-lists-page.jsx";
 
 function App() {
   const firebaseApp = useFirebaseApp();
@@ -35,6 +36,7 @@ function App() {
               <Route path="/mapbox-page" component={MapboxPage} />
               <Route path="/webcam-page" component={WebcamPage} />
               <Route path="/geolocation-page" component={GeolocationPage} />
+              <Route path="/large-lists-page" component={LargeListsPage} />
             </Switch>
 
             <Footer />
