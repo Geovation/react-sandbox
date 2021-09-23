@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 function GeolocationPage() {
   const [lat, setLat] = useState();

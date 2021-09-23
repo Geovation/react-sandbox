@@ -1,8 +1,8 @@
 import React, { useRef, useCallback, useState } from "react";
 import Webcam from "react-webcam";
-import Grid from "@material-ui/core/Grid";
-import IconButton from "@material-ui/core/IconButton";
-import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 
 function WebcamPage() {
   const webcamRef = useRef(null);
@@ -27,6 +27,7 @@ function WebcamPage() {
           aria-label="take picture"
           component="span"
           onClick={capture}
+          size="large"
         >
           <PhotoCameraIcon />
         </IconButton>

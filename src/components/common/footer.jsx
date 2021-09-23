@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Link } from "@material-ui/core";
+import { Box, Container, Grid, Link } from "@mui/material";
 
 function Footer() {
   return (
