@@ -2,11 +2,11 @@ import React, { Fragment, useRef, useEffect, useState } from "react";
 import mapboxgl from "!mapbox-gl";
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYWJkdWxvbWFyZmFydXEiLCJhIjoiY2tsajgxdXV2MWt2YzJ3b2lmeTdvcmNrcyJ9.sH-v970wUMTYCN6F2ymbng";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import Box from "@material-ui/core/Box";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import Box from "@mui/material/Box";
 
 function MapboxPage() {
   const mapContainer = useRef(null);

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Grid, Typography, Card, Box } from "@material-ui/core";
+import { Grid, Typography, Card, Box } from "@mui/material";
 
 function HomePage() {
   return (

@@ -1,8 +1,8 @@
 import { useAuth, useUser, SuspenseWithPerf, useSigninCheck } from "reactfire";
-import Button from "@material-ui/core/Button";
+import Button from "@mui/material/Button";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-import { Grid } from "@material-ui/core";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import { Grid } from "@mui/material";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const signOut = (auth) => auth.signOut().then(() => console.log("signed out"));
 
