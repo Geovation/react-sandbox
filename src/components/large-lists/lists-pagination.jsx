@@ -31,10 +31,10 @@ function ListsPagination() {
   }, []);
 
   return (
-    <Stack spacing={2} alignItems="center">
-      <Box style={{ maxHeight: "80vh", overflow: "auto" }}>
-        {currentPosts &&
-          currentPosts.map((item, index) => (
+    currentPosts.length > 0 && (
+      <Stack spacing={2} alignItems="center">
+        <Box style={{ maxHeight: "80vh", overflow: "auto" }}>
+          {currentPosts.map((item, index) => (
             <div key={index}>
               <Box pt={3}>
                 <Card>
@@ -51,9 +51,10 @@ function ListsPagination() {
               </Box>
             </div>
           ))}
-      </Box>
-      <Pagination count={10} page={currentPage} onChange={handleChange} />
-    </Stack>
+        </Box>
+        <Pagination count={10} page={currentPage} onChange={handleChange} />
+      </Stack>
+    )
   );
 }
 
