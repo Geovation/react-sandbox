@@ -105,7 +105,7 @@ function NavDrawer(props) {
   };
 
   return (
-    <div>
+    <Box sx={{ display: "flex" }}>
       <AppBar position="fixed" open={open}>
         <Toolbar>
           <IconButton
@@ -254,11 +254,11 @@ function NavDrawer(props) {
         />
       </Drawer>
 
-      <Box component="main" sx={{ flexGrow: 1, pl: 9 }}>
+      <Box component="main" sx={{ flexGrow: 1 }}>
         <DrawerHeader />
         {props.pageContent}
       </Box>
-    </div>
+    </Box>
   );
 }
 
