@@ -36,26 +36,28 @@ export default function NavDrawer({ open, setOpen }) {
   };
 
   return (
-    <Box>
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{
-              marginRight: "36px",
-              ...(open && { display: "none" }),
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap>
-            {title}
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <nav>
+      <Box>
+        <AppBar position="fixed" open={open}>
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{
+                marginRight: "36px",
+                ...(open && { display: "none" }),
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" noWrap>
+              {title}
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </nav>
   );
 }

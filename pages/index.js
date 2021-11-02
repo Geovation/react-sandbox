@@ -5,13 +5,7 @@ import Container from "@mui/material/Container";
 export default function Home() {
   return (
     <React.Fragment>
-      <Box sx={{ pr: 2, pl: 10, my: 5, pt: 2 }}>
-        <Container maxWidth="xl">
-          <Box sx={{ bgcolor: "#cfe8fc", height: "100vh" }}>
-            <h1>Home</h1>
-          </Box>
-        </Container>
-      </Box>
+      <h1>Home</h1>
     </React.Fragment>
   );
 }
