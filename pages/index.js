@@ -29,7 +29,7 @@ export default function Home() {
           <Grid item>
             <Box p={2}>
               <Typography variant="h5">
-                A project to showcase what's possible in React.
+                A project to showcase what&rsquos possible in React.
               </Typography>
             </Box>
           </Grid>
