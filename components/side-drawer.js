@@ -124,17 +124,6 @@ export default function SideDrawer({ open, setOpen }) {
           </ListItem>
 
           <ListItem>
-            <Link href="/auth" passHref>
-              <ListItemButton>
-                <ListItemIcon>
-                  <AccountBoxIcon />
-                </ListItemIcon>
-                <a>Auth</a>
-              </ListItemButton>
-            </Link>
-          </ListItem>
-
-          <ListItem>
             <Link href="/mapbox" passHref>
               <ListItemButton>
                 <ListItemIcon>
