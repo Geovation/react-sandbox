@@ -28,9 +28,7 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-export default function NavDrawer({ open, setOpen }) {
-  const [title, setTitle] = React.useState("React Sandbox");
-
+export default function NavDrawer({ open, setOpen, title }) {
   const handleDrawerOpen = () => {
     setOpen(true);
   };

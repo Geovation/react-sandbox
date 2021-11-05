@@ -70,11 +70,15 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-export default function SideDrawer({ open, setOpen }) {
+export default function SideDrawer({ open, setOpen, setTitle }) {
   const theme = useTheme();
 
   const handleDrawerClose = () => {
     setOpen(false);
+  };
+
+  const onClickTitleHandler = (title) => {
+    setTitle(title);
   };
   return (
     <Box>
@@ -93,10 +97,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("React Sandbox");
+                  }}
+                >
                   <HomeIcon />
                 </ListItemIcon>
-                <a>Home</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("React Sandbox");
+                  }}
+                >
+                  Home
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
@@ -104,10 +118,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/google-maps" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("Google Maps");
+                  }}
+                >
                   <MapIcon />
                 </ListItemIcon>
-                <a>Google Maps</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("Google Maps");
+                  }}
+                >
+                  Google Maps
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
@@ -115,10 +139,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/form" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("Form");
+                  }}
+                >
                   <ContactSupportIcon />
                 </ListItemIcon>
-                <a>Form</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("Form");
+                  }}
+                >
+                  Form
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
@@ -126,10 +160,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/mapbox" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("Mapbox");
+                  }}
+                >
                   <MapIcon />
                 </ListItemIcon>
-                <a>Mapbox</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("Mapbox");
+                  }}
+                >
+                  Mapbox
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
@@ -137,10 +181,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/webcam" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("Webcam");
+                  }}
+                >
                   <PhotoCameraIcon />
                 </ListItemIcon>
-                <a>Webcam</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("Webcam");
+                  }}
+                >
+                  Webcam
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
@@ -148,10 +202,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/geolocation" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("Geolocation");
+                  }}
+                >
                   <GpsFixedIcon />
                 </ListItemIcon>
-                <a>Geolocation</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("Geolocation");
+                  }}
+                >
+                  Geolocation
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
@@ -159,10 +223,20 @@ export default function SideDrawer({ open, setOpen }) {
           <ListItem>
             <Link href="/large-lists" passHref>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon
+                  onClick={() => {
+                    onClickTitleHandler("Large Lists");
+                  }}
+                >
                   <ListIcon />
                 </ListItemIcon>
-                <a>Large Lists</a>
+                <a
+                  onClick={() => {
+                    onClickTitleHandler("Large Lists");
+                  }}
+                >
+                  Large Lists
+                </a>
               </ListItemButton>
             </Link>
           </ListItem>
