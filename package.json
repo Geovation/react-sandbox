@@ -2,75 +2,32 @@
   "name": "react-sandbox",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "@emotion/react": "^11.4.1",
+    "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
-    "@mui/icons-material": "^5.0.1",
-    "@mui/material": "^5.0.1",
-    "@mui/styles": "^5.0.1",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
-    "clsx": "^1.1.1",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "^5.0.4",
+    "@mui/styles": "^5.0.2",
+    "axios": "^0.24.0",
     "faker": "^5.5.3",
-    "firebase": "^8.9.1",
     "google-map-react": "^2.1.10",
-    "mapbox-gl": "^2.4.1",
+    "mapbox-gl": "^2.5.1",
+    "next": "^12.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-firebaseui": "^5.0.2",
-    "react-hook-form": "^7.12.2",
+    "react-hook-form": "^7.18.1",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-select": "^4.3.1",
-    "react-webcam": "^6.0.0",
-    "reactfire": "^3.0.0-rc.3",
-    "web-vitals": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-select": "^5.2.0",
+    "react-webcam": "^6.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.24.0",
-    "husky": "^7.0.0",
-    "lint-staged": "^11.1.2",
-    "prettier": "2.3.2"
-  },
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "prettier --list-different --write --config .prettierrc.json"
-    ],
-    "*.+(json|css|md)": [
-      "prettier --list-different --write --config .prettierrc.json"
-    ]
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
   }
 }
